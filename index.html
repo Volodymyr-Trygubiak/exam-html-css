@@ -163,15 +163,17 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    let burgerMenu = document.querySelector('.burger-menu');
+          let menu = document.querySelector('.nav__menu');
+          burgerMenu.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+            burgerMenu.classList.toggle('is-active');
+          })
+  </script>
 </body>
 
-<script>
-  let burgerMenu = document.querySelector('.burger-menu');
-        let menu = document.querySelector('.nav__menu');
-        burgerMenu.addEventListener('click', () => {
-          menu.classList.toggle('is-active');
-          burgerMenu.classList.toggle('is-active');
-        })
-</script>
+
 
 </html>
